@@ -39,6 +39,14 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <script>
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
 </head>
 <body>
 
@@ -165,17 +173,12 @@
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-centered">
+    <div class="hero-body is-centered">
+      
         <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/proposal_videos/PegInsertionSide-v1_single.mp4"
+        <source src="./static/videos/proposal_videos/landing_video.mp4"
                 type="video/mp4">
         </video>
-        <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/proposal_videos/PegInsertionSide-v1_multi.mp4"
-                type="video/mp4">
-        </video>
-      </div>
       <h2 class="subtitle has-text-centered">
         Agent in taking random actions in PegInsertionSide environment.
       </h2>
@@ -184,62 +187,80 @@
 </section>
 
 
-<!-- <section class="hero is-light is-small">
+<section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
+            <source src="./static/videos/proposal_videos/main_1.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-chair-tp">
           <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
+            <source src="./static/videos/proposal_videos/main_2.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-shiba">
           <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
+            <source src="./static/videos/proposal_videos/main_3.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-fullbody">
+               <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_00.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_01.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_02.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!-- <div class="item item-fullbody">
           <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/fullbody.mp4"
                     type="video/mp4">
           </video>
-        </div>
-        <div class="item item-blueshirt">
+        </div> -->
+        <!-- <div class="item item-blueshirt">
           <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/blueshirt.mp4"
                     type="video/mp4">
           </video>
-        </div>
-        <div class="item item-mask">
+        </div> -->
+        <!-- <div class="item item-mask">
           <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/mask.mp4"
                     type="video/mp4">
           </video>
-        </div>
-        <div class="item item-coffee">
+        </div> -->
+        <!-- <div class="item item-coffee">
           <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/coffee.mp4"
                     type="video/mp4">
           </video>
-        </div>
-        <div class="item item-toby">
+        </div> -->
+        <!-- <div class="item item-toby">
           <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/toby2.mp4"
                     type="video/mp4">
           </video>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 
 <section class="section">
@@ -297,79 +318,49 @@
 
 
 <section class="section">
-  <div class="container is-max-desktop">
+  <div class="container is-max-desktop is-centered">
 
     <div class="columns is-centered">
 
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Plug Charger</h2>
-          <p>
-            [Add reward function]
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/proposal_videos/PlugCharger-v1_single.mp4"
+          <h2 class="title is-3">Reward Function (PegInsertionSide-v1).</h2>
+
+            $$
+            r =
+            \begin{cases}
+            10, & \text{if success} \\
+            r_{\text{reach}} + \mathbf{1}_{\text{grasp}} + \mathbf{1}_{\text{grasp}}\, r_{\text{pre}} + \mathbf{1}_{\text{grasp}\land \text{pre}}\, r_{\text{ins}}, & \text{otherwise}
+            \end{cases}
+            $$
+
+          <!-- <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_single.mp4"
                     type="video/mp4">
-          </video>
+          </video> -->
         </div>
       </div>
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Pull Cube</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              [Add reward function]
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/proposal_videos/PullCubeTool-v1_single.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
     </div>
     <!--/ Matting. -->
 
-    <div class="columns is-centered">
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Assembling Kits</h2>
-          <p>
-            [Add reward function]
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/proposal_videos/AssemblingKits-v1_single.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">PickSingleYCB</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              [Add reward function]
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/proposal_videos/PickSingleYCB-v1_single.mp4"
-                      type="video/mp4">
-            </video>
+    <div class="column is-centered">
+        <div class="column">
+          <h2 class="title is-3">Mean Return</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <img src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_comparison.png" alt="Rollout Comparison">
+              <!-- <video id="matting-video" controls playsinline height="100%">
+                <source src="./static/videos/proposal_videos/PullCubeTool-v1_single.mp4"
+                        type="video/mp4">
+              </video> -->
+            </div>
           </div>
-
         </div>
-      </div>
     </div>
-    <!--/ Matting. -->
-    
 
 
 
