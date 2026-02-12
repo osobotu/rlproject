@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+        content="">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>ActionComplete: Sample-Efficient Post-Training of VLAs via Residual RL</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -32,7 +32,11 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/favicon_io/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./static/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./static/images/favicon_io/site.webmanifest">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -96,7 +100,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Project Title</h1>
+          <h1 class="title is-1 publication-title">ActionComplete: Sample-Efficient Post-Training of VLAs via Residual RL</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="">Abhikhya Tripathy</a><sup>1</sup>,</span>
@@ -116,7 +120,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="./static/Robot_Learning_Proposal.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -124,7 +128,7 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -132,9 +136,9 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -142,7 +146,7 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
                 <a href=""
@@ -154,14 +158,14 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                  </a> -->
             </div>
 
           </div>
@@ -180,7 +184,7 @@
                 type="video/mp4">
         </video>
       <h2 class="subtitle has-text-centered">
-        Agent in taking random actions in PegInsertionSide environment.
+        Agents taking random actions in PegInsertionSide environment.
       </h2>
     </div>
   </div>
@@ -191,6 +195,24 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_00.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_01.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_02.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
         <div class="item item-steve">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/proposal_videos/main_1.mp4"
@@ -206,24 +228,6 @@
         <div class="item item-shiba">
           <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/proposal_videos/main_3.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-               <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_00.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_01.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_02.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -319,6 +323,66 @@ Instead of training from scratch, the residual policy only learns small actions 
 </section>
 
 
+<!-- Architecture Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Overall Proposed Architecture</h2>
+        <div class="content has-text-centered">
+          <img src="./static/images/base_archi.png" alt="Overall Proposed Architecture" style="max-width: 100%; height: auto;">
+          <p class="has-text-centered" style="margin-top: 1rem;">
+            The overall architecture of our proposed approach for sample-efficient post-training of VLAs via residual RL.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Modifications Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">Proposed Modifications</h2>
+    
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4">Modification 1: Learning Exploration Strategies from Demonstrations</h3>
+        <div class="content has-text-justified">
+          <p>
+            This modification focuses on enhancing the agent's exploration capabilities by leveraging demonstration data. 
+            By learning from expert trajectories, the agent can develop more efficient exploration strategies that guide 
+            the residual RL policy towards promising regions of the state-action space, significantly improving sample 
+            efficiency during post-training.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered" style="margin-top: 2rem;">
+      <div class="column is-full-width">
+        <h3 class="title is-4">Modification 2: Learning Human-Like Behavior through Affordances</h3>
+        <div class="content has-text-centered">
+          <img src="./static/images/affordance_archi.png" alt="Affordances Architecture" style="max-width: 100%; height: auto;">
+          <p class="has-text-centered" style="margin-top: 1rem;">
+            The proposed architecture incorporating affordances for learning human-like behavior.
+          </p>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            This modification incorporates affordance learning to enable the agent to exhibit more human-like behavior. 
+            By understanding object affordances and their relationships within the environment, the agent can make more 
+            intuitive decisions that align with human reasoning and interaction patterns, leading to more natural and 
+            effective task completion.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="section">
   <div class="container is-max-desktop is-centered">
 
@@ -326,27 +390,27 @@ Instead of training from scratch, the residual policy only learns small actions 
 
       <!-- Visual Effects. -->
       <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Reward Function (PegInsertionSide-v1).</h2>
+        <!-- <div class="content"> -->
+          <!-- <h2 class="title is-3">Reward Function (PegInsertionSide-v1).</h2> -->
 
-            $$
+            <!-- $$
             r =
             \begin{cases}
             10, & \text{if success} \\
             r_{\text{reach}} + \mathbf{1}_{\text{grasp}} + \mathbf{1}_{\text{grasp}}\, r_{\text{pre}} + \mathbf{1}_{\text{grasp}\land \text{pre}}\, r_{\text{ins}}, & \text{otherwise}
             \end{cases}
-            $$
+            $$ -->
 
           <!-- <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/proposal_videos/PegInsertionSide-v1_single.mp4"
                     type="video/mp4">
           </video> -->
-        </div>
-      </div>
+        <!-- </div> -->
+      <!-- </div> -->
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
-    </div>
+    <!-- </div> -->
     <!--/ Matting. -->
 
     <div class="column is-centered">
