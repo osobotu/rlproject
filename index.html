@@ -176,153 +176,32 @@
 </section>
 
 
-<!-- PPO vs SAC Videos Section -->
+<!-- Abstract -->
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">PPO (On-Policy) vs SAC (Off-Policy)</h2>
-      </div>
-    </div>
-
-    <div class="columns is-centered" style="margin-bottom: 2rem;">
-      <div class="column is-four-fifths has-text-centered">
-        <h3 class="title is-4">PPO (On-Policy)</h3>
-        <video controls muted loop playsinline style="width: 100%; max-width: 100%;">
-          <source src="./static/videos/proposal_videos/7.mp4"
-                  type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
-      <div class="column is-four-fifths has-text-centered">
-        <h3 class="title is-4">SAC (Off-Policy)</h3>
-        <video controls muted loop playsinline style="width: 100%; max-width: 100%;">
-          <source src="./static/videos/proposal_videos/33.mp4"
-                  type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body is-centered">
-      
-        <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/proposal_videos/landing_video.mp4"
-                type="video/mp4">
-        </video>
-      <h2 class="subtitle has-text-centered">
-        Agents taking random actions in PegInsertionSide environment.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_00.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_01.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_02.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/proposal_videos/main_1.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/proposal_videos/main_2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/proposal_videos/main_3.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>Learning robotic manipulation policies that are both effective and sample-efficient remains a major challenge, particularly for tasks requiring precise physical interactions of the robot with the environment. Although end-to-end reinforcement learning (RL) has shown promise and been widely used for such tasks, it often suffers from slow convergence, sensitivity to reward design, and suboptimal exploration in complex environments. In this work, we investigate a framework that leverages pretrained base policies with rich prior knowledge, often learned via behavior cloning (BC), and adapts them to challenging manipulation tasks through the addition of a residual policy learned via online reinforcement learning. 
-Instead of training from scratch, the residual policy only learns small actions to correct the base policy, resulting in more effective and sample-efficient learning. We specifically use Vision-Language-Action (VLA) models, which are pretrained on large amounts of data, as our base policy. We further highlight limitations of naive exploration and propose more informed exploration strategies beyond low-level action imitation.</p>
-          <!-- <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            Learning robotic manipulation policies that are both effective and sample-efficient remains
+            a major challenge, particularly for tasks requiring precise physical interactions of the
+            robot with the environment. Although end-to-end reinforcement learning (RL) has shown
+            promise and been widely used for such tasks, it often suffers from slow convergence,
+            sensitivity to reward design, and suboptimal exploration in complex environments. In this
+            work, we investigate a framework that leverages pretrained base policies with rich prior
+            knowledge, often learned via behavior cloning (BC), and adapts them to challenging
+            manipulation tasks through the addition of a residual policy learned via online
+            reinforcement learning. Instead of training from scratch, the residual policy only learns
+            small actions to correct the base policy, resulting in more effective and sample-efficient
+            learning. We specifically use Vision-Language-Action (VLA) models, which are pretrained on
+            large amounts of data, as our base policy. We further highlight limitations of naive
+            exploration and propose more informed exploration strategies beyond low-level action
+            imitation.
           </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
-          </p> -->
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
   </div>
 </section>
 
@@ -333,12 +212,131 @@ Instead of training from scratch, the residual policy only learns small actions 
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Overall Proposed Architecture</h2>
+        <div class="content has-text-justified" style="margin-bottom: 1rem;">
+          <p>
+            We use a frozen pretrained VLA model as a base policy that predicts coarse actions from
+            RGB observations and language instructions. On top of it, we learn a residual RL policy
+            online that predicts small corrective actions, which are added to the base actions. The
+            residual policy's observation is augmented with the base policy's predicted action,
+            allowing it to condition its corrections on what the VLA intends to do. This design
+            preserves the VLA's broad task priors while enabling precise, environment-specific
+            fine-tuning through RL.
+          </p>
+        </div>
         <div class="content has-text-centered">
           <img src="./static/images/base_archi.png" alt="Overall Proposed Architecture" style="max-width: 100%; height: auto;">
-          <p class="has-text-centered" style="margin-top: 1rem;">
+          <p class="has-text-centered" style="margin-top: 0.75rem;">
             The overall architecture of our proposed approach for sample-efficient post-training of VLAs via residual RL.
           </p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Task / Environment -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body is-centered">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/proposal_videos/landing_video.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered" style="margin-top: 0.75rem;">
+        A random agent on the <em>PegInsertionSide-v1</em> task — the robot must pick up the orange
+        peg and insert it into the hole on the side of the box. Near-zero reward from random actions
+        highlights the difficulty of this contact-rich task.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_00.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_01.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_rollout_02.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/main_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/main_2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/proposal_videos/main_3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Baseline Comparison Videos Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Baseline Comparison: PPO vs SAC vs TD-MPC2</h2>
+        <p class="has-text-justified" style="margin-bottom: 1.5rem;">
+          To establish performance baselines prior to integrating the VLA, we trained three standalone
+          RL agents directly on <em>PegInsertionSide-v1</em>: <strong>PPO</strong> (on-policy
+          policy-gradient), <strong>SAC</strong> (off-policy Q-function-based), and
+          <strong>TD-MPC2</strong> (model-based RL with an implicit world model and model-predictive
+          planning). All agents use only RGB observations and the <code>pd_joint_delta_pos</code>
+          control mode. SAC converges faster than PPO among model-free methods, reaching a stable
+          return of ~25 vs PPO's ~6 at the same step count. TD-MPC2 achieves the highest early
+          returns by planning ahead with its learned world model, though model errors introduce
+          visible variance. All three agents learn to pick up the peg and orient it toward the hole
+          but fail at the millimeter-precision insertion step, resulting in 0% success rate — motivating
+          our residual RL approach with a pretrained VLA base policy.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered" style="margin-bottom: 2rem;">
+      <div class="column is-four-fifths has-text-centered">
+        <h3 class="title is-4">PPO (On-Policy)</h3>
+        <video controls muted loop playsinline style="width: 100%; max-width: 100%;">
+          <source src="./static/videos/proposal_videos/7.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="columns is-centered" style="margin-bottom: 2rem;">
+      <div class="column is-four-fifths has-text-centered">
+        <h3 class="title is-4">SAC (Off-Policy)</h3>
+        <video controls muted loop playsinline style="width: 100%; max-width: 100%;">
+          <source src="./static/videos/proposal_videos/33.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <h3 class="title is-4">TD-MPC2 (Model-Based)</h3>
+        <video controls muted loop playsinline style="width: 100%; max-width: 100%;">
+          <source src="./static/videos/proposal_videos/TDMPC2_video.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
   </div>
@@ -349,195 +347,109 @@ Instead of training from scratch, the residual policy only learns small actions 
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">Proposed Modifications</h2>
-    
+
+    <!-- Modification 1 -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h3 class="title is-4">Modification 1: Learning Exploration Strategies from Demonstrations</h3>
         <div class="content has-text-justified">
           <p>
-            This modification focuses on enhancing the agent's exploration capabilities by leveraging demonstration data. 
-            By learning from expert trajectories, the agent can develop more efficient exploration strategies that guide 
-            the residual RL policy towards promising regions of the state-action space, significantly improving sample 
-            efficiency during post-training.
+            A key limitation of naive RL exploration is that random actions almost never reach the
+            critical contact states needed for peg insertion. This modification teaches the residual
+            RL policy high-level <em>strategies</em> for efficient exploration from a small number of
+            demonstrations, rather than just imitating low-level actions. We decompose peg insertion
+            into five discrete phases — free-move, make-contact, sweep-surface, engage-hole, and
+            insert — motivated by how a human searches for a hidden hole using surface contact. A
+            hierarchical Q-learner builds a skill library from demonstration segments and learns
+            inter-skill transition probabilities, forming a mechanism graph that encodes the
+            high-level strategy. The RL exploration distribution is warm-started from this
+            demo-conditioned distribution, biasing early exploration toward contact-search motions
+            rather than random flailing. Our implementation takes inspiration from
+            <a href="https://concepts-ai.com/p/mechanisms/" target="_blank">Learning Reusable
+            Manipulation Strategies (J. Mao et al., 2023)</a>.
           </p>
+        </div>
+
+        <!-- Modification 1 Videos -->
+        <div class="columns is-centered" style="margin-top: 1.5rem; align-items: flex-start;">
+
+          <!-- Left: forced stage progression -->
+          <div class="column">
+            <h4 class="title is-5 has-text-centered">Forced Stage Progression</h4>
+            <video controls muted loop playsinline style="width: 100%;">
+              <source src="./static/videos/proposal_videos/moves_on_from_unsuccessful_grasp_video.mp4"
+                      type="video/mp4">
+            </video>
+            <div class="content has-text-justified" style="margin-top: 0.75rem;">
+              <p>
+                Here, we force the execution to move on to the next learned stage regardless of
+                low-level success after a few timesteps, in order to visualize the algorithm's ability
+                to learn high-level mechanisms. Even though the low-level tasks of grasping and moving
+                the peg to the surface do not succeed, the robot gripper follows through with the
+                high-level stages learned as part of the strategy — gripping the peg, moving it to the
+                surface, making contact, and performing a sweep to detect the hole position. This
+                reveals that the major bottleneck for success on fine-grained manipulation tasks is the
+                effectiveness of the low-level controllers, validating the idea of decoupling high-level
+                strategies from low-level actions for better generalization. Well-trained low-level
+                controllers for basic manipulation tasks can be composed for diverse tasks in high-level
+                sequences learned through demonstrations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: stuck at grasping -->
+          <div class="column">
+            <h4 class="title is-5 has-text-centered">Stuck at Grasping Stage</h4>
+            <video controls muted loop playsinline style="width: 100%;">
+              <source src="./static/videos/proposal_videos/stuck_at_unsuccessful_grasp_video.mp4"
+                      type="video/mp4">
+            </video>
+            <div class="content has-text-justified" style="margin-top: 0.75rem;">
+              <p>
+                The modification 1 algorithm tries to follow through with the high-level stages it
+                learned as part of the learned mechanism/strategy. It learns that the first stage is
+                grasping the peg and attempts to perform the low-level actions associated with it, but
+                fails to do so. Hence the execution gets stuck on this stage and is unable to progress
+                to the next learned high-level stage.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
 
-    <div class="columns is-centered" style="margin-top: 2rem;">
+    <!-- Modification 2 -->
+    <div class="columns is-centered" style="margin-top: 3rem;">
       <div class="column is-full-width">
-        <h3 class="title is-4">Modification 2: Learning Human-Like Behavior through Affordances</h3>
-        <div class="content has-text-centered">
-          <img src="./static/images/affordance_archi.png" alt="Affordances Architecture" style="max-width: 100%; height: auto;">
-          <p class="has-text-centered" style="margin-top: 1rem;">
-            The proposed architecture incorporating affordances for learning human-like behavior.
-          </p>
-        </div>
+        <h3 class="title is-4">Modification 2: VLM as a Learned Reward Signal</h3>
         <div class="content has-text-justified">
           <p>
-            This modification incorporates affordance learning to enable the agent to exhibit more human-like behavior. 
-            By understanding object affordances and their relationships within the environment, the agent can make more 
-            intuitive decisions that align with human reasoning and interaction patterns, leading to more natural and 
-            effective task completion.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop is-centered">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <!-- <div class="content"> -->
-          <!-- <h2 class="title is-3">Reward Function (PegInsertionSide-v1).</h2> -->
-
-            <!-- $$
-            r =
-            \begin{cases}
-            10, & \text{if success} \\
-            r_{\text{reach}} + \mathbf{1}_{\text{grasp}} + \mathbf{1}_{\text{grasp}}\, r_{\text{pre}} + \mathbf{1}_{\text{grasp}\land \text{pre}}\, r_{\text{ins}}, & \text{otherwise}
-            \end{cases}
-            $$ -->
-
-          <!-- <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/proposal_videos/PegInsertionSide-v1_single.mp4"
-                    type="video/mp4">
-          </video> -->
-        <!-- </div> -->
-      <!-- </div> -->
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-    <!-- </div> -->
-    <!--/ Matting. -->
-
-    <div class="column is-centered">
-        <div class="column">
-          <!-- <h2 class="title is-3">Mean Return</h2> -->
-        <!-- <div class="column"> -->
-          <!-- <h2 class="title is-3">SAC (Off-Policy) vs PPO (On-Policy)</h2>
-          <div class="columns is-centered">
-            <div class="column content">
-              <img src="./static/images/ppo_vs_sac.png" alt="SAC vs PPO Comparison">
-            </div>
-          </div> -->
-    </div>
-
-
-
-    <!-- Animation. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2> -->
-
-        <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/> -->
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            Hand-crafted reward functions require expert knowledge, are task-specific, and risk reward
+            hacking. This modification replaces the manually engineered dense reward with a learned
+            visual reward model, <strong>Robometer</strong>, trained on over 1 million robot trajectory
+            comparisons using a vision-language backbone. Robometer provides a progress score
+            \(\hat{r}_{\text{prog}}(s_t, g) \in [0,1]\) for any visual observation and language goal,
+            requiring no task-specific engineering. We use this as a drop-in reward for the residual
+            RL policy. On the <em>PickCube-v1</em> task, where progress is visually clear,
+            Robometer-guided residual RL steadily improves above the VLA baseline. On
+            <em>PegInsertionSide-v1</em>, it provides better early guidance than the hand-crafted
+            reward but cannot reliably distinguish near-contact failures from successful insertion
+            states — confirming that Robometer shines when task progress is visually observable and
+            smoothly correlated with success.
           </p>
         </div>
         <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        <!--/ Re-rendering. -->
-
-      <!-- </div>
-    </div> -->
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+          <img src="./static/images/affordance_archi.png" alt="Modification 2 Architecture" style="max-width: 100%; height: auto;">
+          <p class="has-text-centered" style="margin-top: 0.75rem;">
+            Architecture for Modification 2: the VLM-based Robometer reward model replaces the hand-crafted dense reward.
           </p>
         </div>
       </div>
-    </div> -->
-    <!--/ Concurrent Work. -->
+    </div>
 
   </div>
 </section>
-
-
-<!-- <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
-</section> -->
 
 
 <footer class="footer">
